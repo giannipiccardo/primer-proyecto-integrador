@@ -28,8 +28,8 @@
                 <li><a href="#left-container">Producto</a></li>
                 <li><a href="#section1">Características</a></li>
                 <li><a href="#section2">Precios</a></li>
-                <li><a href="#">Ingresar</a></li>
-                <li><a href="#">Registrase</a></li>
+                <li><a href="#ingresar" id="ingresar" >Ingresar</a></li>
+                <li><a href="#" id="registrarme">Registrase</a></li>
               </ul>
         </div>
 
@@ -56,10 +56,10 @@
         </div>
         <div class="navbar-login">
             <div class="navbar-item">
-                <a href="#">Ingresar</a>
+                <a href="#" id="ingresar2">Ingresar</a>
             </div>
             <div class="navbar-item">
-                <a href="#" id="registrarme">Registrarme</a>
+                <a href="#" id="registrarme2">Registrarme</a>
             </div>
         </div>
     </nav>
@@ -70,7 +70,7 @@
             <h1>La plataforma para las empresas del futuro</h1>
             <p id="paragraph">Productos pensados para los negocios del próximo siglo</p>
             <button class="demo">Solicitar demo</button>
-            <button id="registrarse">Registrarse</button>
+            <button id="registrarme3">Registrarse</button>
         </div>
 
         <div id="right-container">
@@ -191,26 +191,26 @@
             <span>© 2022 Flex. Un producto ficticio de Senpai</span>
         </div>
     </footer>
-
+    <div id="modal-toggle">
     <div id="modal">
-        <span class="cierre">X</span>
+        <span id="cierre">X</span>
         <img src="assets/Materiales/logo-verde.png" alt="Logo">
         <h4>Ingresa a tu cuenta</h4>
         <p>y empieza a conseguir resultados</p>
         <form class="form-modal" action="">
             <div class="form-modal-container vertical-fields">
-                <label for="">usuario</label>
-                <input type="text">
+                <label for="">Correo</label>
+                <input type="email">
             </div>
 
             <div class="form-modal-container vertical-fields">
-                <label for="">contraseña</label>
+                <label for="">Contraseña</label>
                 <input type="password">
             </div>
             <div class="form-modal-container recuperar">
-                <div>   
-                    <span  for="">Recordarme</span>
-                    <input type="checkbox" name="" id="">
+                <div class="recuperar">   
+                    <input  type="checkbox" name="" id="">
+                    <span for="">Recordarme</span>
                 </div>
                 <div>
                     <span class="recuperar-span">Olvidé mi contraseña</span>
@@ -220,6 +220,9 @@
             <button>Ingresar</button>
         </form>
 
+            <p id="paragraph3">¿Aún no tienes tu cuenta? <a href="#" id="a-registrate">Registrarse</a></p> 
+
+    </div>
     </div>
 
 
@@ -229,8 +232,7 @@
 
 
 
-
-    <script src="assets/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
