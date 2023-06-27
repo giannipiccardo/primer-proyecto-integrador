@@ -12,7 +12,29 @@
 </head>
 
 <body>
+    <nav class="mobile-nav">
+        <div class="navbar-logo">
+            <img src="assets/Materiales/logo-verde.png" alt="Logo">
+            <img src="assets/Materiales/Flex .png" alt="Texto Flex">
+        </div> 
+        <div class="hamburguesita">
+            <label for="menu-toggle" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <input type="checkbox" id="menu-toggle">
+              <ul class="menu">
+                <li><a href="#left-container">Producto</a></li>
+                <li><a href="#section1">Características</a></li>
+                <li><a href="#section2">Precios</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Registrase</a></li>
+              </ul>
+        </div>
 
+
+    </nav>
 
     <nav class="navbar">
         <div class="navbar-logo">
@@ -22,13 +44,13 @@
         <div class="navbar-items">
             <div class="centered">
                 <div class="navbar-item">
-                    <a href="#">Producto</a>
+                    <a href="#left-container">Producto</a>
                 </div>
                 <div class="navbar-item">
-                    <a href="#">Características</a>
+                    <a href="#section1">Características</a>
                 </div>
                 <div class="navbar-item">
-                    <a href="#">Precios</a>
+                    <a href="#section2">Precios</a>
                 </div>
             </div>
         </div>
@@ -169,6 +191,36 @@
             <span>© 2022 Flex. Un producto ficticio de Senpai</span>
         </div>
     </footer>
+
+    <div id="modal">
+        <span class="cierre">X</span>
+        <img src="assets/Materiales/logo-verde.png" alt="Logo">
+        <h4>Ingresa a tu cuenta</h4>
+        <p>y empieza a conseguir resultados</p>
+        <form class="form-modal" action="">
+            <div class="form-modal-container vertical-fields">
+                <label for="">usuario</label>
+                <input type="text">
+            </div>
+
+            <div class="form-modal-container vertical-fields">
+                <label for="">contraseña</label>
+                <input type="password">
+            </div>
+            <div class="form-modal-container recuperar">
+                <div>   
+                    <span  for="">Recordarme</span>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                    <span class="recuperar-span">Olvidé mi contraseña</span>
+                </div>
+
+            </div>
+            <button>Ingresar</button>
+        </form>
+
+    </div>
 
 
 

@@ -40,6 +40,7 @@
                 }
             }
         }
+        
     }
 
     .navbar-login {
@@ -68,6 +69,62 @@
         }
 
         // background-color: orange;
+    }
+    @media(max-width: 390px){
+        display: none;
+        
+    }
+
+}
+.mobile-nav{
+    display: none;
+    @media(max-width: 390px){
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 50px;
+        }
+        .hamburguesita{
+
+
+            .menu-btn {
+                display: block;
+                cursor: pointer;
+                padding: 10px;
+              }
+              
+              .menu-btn span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: #333;
+                margin-bottom: 5px;
+
+              }
+              
+              .menu {
+                display: none;
+                list-style-type: none;
+                padding: 0;
+              }
+              
+              .menu li {
+                margin-bottom: 10px;
+              }
+              
+              .menu a {
+                text-decoration: none;
+                color: #333;
+              }
+              
+              #menu-toggle {
+                display: none;
+              }
+              
+              #menu-toggle:checked ~ .menu {
+                display: block;
+              }
+        }
     }
 
 }
@@ -353,3 +410,65 @@ footer{
         }
     }
 }
+
+#modal{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 45vh;
+    background-color: #2A3342;
+    color: white;
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+      margin: auto;
+
+    .cierre{
+        align-self: end;
+        margin-right: 20px;
+    }
+    img{
+        width: 50px;
+    }
+    .form-modal{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 5px;
+
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            background-color: #2AD167;
+            color: white;    
+            margin: 10px 0px 30px 0px;
+        }
+        .form-modal-container{
+            width: 100%;
+            margin: 5px 0px;
+
+
+        }
+
+        }
+        span{
+            display: flex;
+            font-size: 0.5em;
+            .recuperar-span{
+                color:#2AD167;
+            }
+
+
+
+        }
+
+        .vertical-fields{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+

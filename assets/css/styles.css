@@ -55,6 +55,54 @@
   border: 1px solid gray;
   padding: 5px 10px;
 }
+@media (max-width: 390px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 390px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-nav img {
+    width: 50px;
+  }
+  .mobile-nav .hamburguesita .menu-btn {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .mobile-nav .hamburguesita .menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+  .mobile-nav .hamburguesita .menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+  }
+  .mobile-nav .hamburguesita .menu li {
+    margin-bottom: 10px;
+  }
+  .mobile-nav .hamburguesita .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  .mobile-nav .hamburguesita #menu-toggle {
+    display: none;
+  }
+  .mobile-nav .hamburguesita #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+}
 
 header {
   display: flex;
@@ -299,4 +347,55 @@ footer .footer-copy span {
     justify-content: center;
     margin: 40px 15px;
   }
+}
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 45vh;
+  background-color: #2A3342;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+}
+#modal .cierre {
+  align-self: end;
+  margin-right: 20px;
+}
+#modal img {
+  width: 50px;
+}
+#modal .form-modal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5px;
+}
+#modal .form-modal button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #2AD167;
+  color: white;
+  margin: 10px 0px 30px 0px;
+}
+#modal .form-modal .form-modal-container {
+  width: 100%;
+  margin: 5px 0px;
+}
+#modal span {
+  display: flex;
+  font-size: 0.5em;
+}
+#modal span .recuperar-span {
+  color: #2AD167;
+}
+#modal .vertical-fields {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
