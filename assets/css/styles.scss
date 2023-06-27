@@ -110,6 +110,13 @@ header {
                 margin-right: 15px;
             }
         }
+        @media(max-width: 390px){
+            width: 100%;
+            h1{
+                font-size: 3rem;
+            }
+            
+        }
     }
 
     #right-container {
@@ -117,14 +124,22 @@ header {
 
         .sun {
             position: absolute;
-            top: 10%;
-            left: 46%;
+            top: -10%;
+            left: -10%;
         }
 
         .sea {
             position: absolute;
-            top: 59%;
-            left: 78%;
+            top: 90%;
+            left: 85%;
+        }
+        .images-container{
+            position: relative;
+            width: min-content;
+        }
+        @media(max-width: 390px){
+            display: none;
+            
         }
     }
 }
@@ -136,6 +151,7 @@ header {
 main {
     #section1 {
         display: flex;
+        flex-wrap: wrap;
         
         img {
             background-color: #2AD167;
@@ -162,6 +178,13 @@ main {
             font-size: 1.5rem;
             font-weight: bold;
             margin: 25px 0;
+        }
+        @media(max-width: 390px){
+            .section1-item{
+                width: 100%;
+                margin-top: 20px;
+            }
+            
         }
     }
 
@@ -259,6 +282,20 @@ main {
                 }
             }
         }
+        @media(max-width: 390px){
+            .prices-container{
+                flex-wrap: wrap;
+
+                .plan-container{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-size: 2rem;
+            }
+
+            
+        }
     }
 }
 
@@ -275,6 +312,9 @@ footer{
         img{
             width: 50px;
         }
+        @media(max-width: 390px){
+            margin-top: 40px;
+        }
     }
     .footer-nav{
         display: flex;
@@ -290,6 +330,15 @@ footer{
                 font-weight: bold;
             }
         }
+        @media(max-width: 390px){
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+            .footer-item{
+                margin-top: 5px;
+            }
+            
+        }
     }
     .footer-copy{
         margin-top: 100px;
@@ -297,6 +346,10 @@ footer{
         span{
             font-size: 1.2rem;
             font-weight: bold;
+        }
+        @media(max-width: 390px){
+            justify-content: center;
+            margin: 40px 15px;
         }
     }
 }

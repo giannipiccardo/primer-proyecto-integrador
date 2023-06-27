@@ -89,18 +89,36 @@ header #left-container button.demo {
   color: white;
   margin-right: 15px;
 }
+@media (max-width: 390px) {
+  header #left-container {
+    width: 100%;
+  }
+  header #left-container h1 {
+    font-size: 3rem;
+  }
+}
 header #right-container {
   width: 50%;
 }
 header #right-container .sun {
   position: absolute;
-  top: 10%;
-  left: 46%;
+  top: -10%;
+  left: -10%;
 }
 header #right-container .sea {
   position: absolute;
-  top: 59%;
-  left: 78%;
+  top: 90%;
+  left: 85%;
+}
+header #right-container .images-container {
+  position: relative;
+  width: -moz-min-content;
+  width: min-content;
+}
+@media (max-width: 390px) {
+  header #right-container {
+    display: none;
+  }
 }
 
 .margins {
@@ -109,6 +127,7 @@ header #right-container .sea {
 
 main #section1 {
   display: flex;
+  flex-wrap: wrap;
 }
 main #section1 img {
   background-color: #2AD167;
@@ -129,6 +148,12 @@ main #section1 h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 25px 0;
+}
+@media (max-width: 390px) {
+  main #section1 .section1-item {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 main #section2 h2 {
   font-size: 3rem;
@@ -208,6 +233,17 @@ main #section2 .prices-container .plan-container .custom-list li::before {
   background-image: url("../Materiales/tick2.png");
   background-size: cover;
 }
+@media (max-width: 390px) {
+  main #section2 .prices-container {
+    flex-wrap: wrap;
+  }
+  main #section2 .prices-container .plan-container {
+    width: 100%;
+  }
+  main #section2 h2 {
+    font-size: 2rem;
+  }
+}
 
 footer {
   display: flex;
@@ -223,6 +259,11 @@ footer .footer-logo {
 footer .footer-logo img {
   width: 50px;
 }
+@media (max-width: 390px) {
+  footer .footer-logo {
+    margin-top: 40px;
+  }
+}
 footer .footer-nav {
   display: flex;
   justify-content: space-between;
@@ -235,6 +276,16 @@ footer .footer-nav .footer-item a {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media (max-width: 390px) {
+  footer .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+  footer .footer-nav .footer-item {
+    margin-top: 5px;
+  }
+}
 footer .footer-copy {
   margin-top: 100px;
   margin-bottom: 70px;
@@ -242,4 +293,10 @@ footer .footer-copy {
 footer .footer-copy span {
   font-size: 1.2rem;
   font-weight: bold;
+}
+@media (max-width: 390px) {
+  footer .footer-copy {
+    justify-content: center;
+    margin: 40px 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */
