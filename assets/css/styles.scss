@@ -58,7 +58,7 @@
                 color: black;
             }
 
-            #registrarme {
+            #registrarme2 {
                 background-color: #2AD167;
                 color: white;
                 border-radius: 5px;
@@ -415,7 +415,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    height: 45vh;
+    height: 50vh;
     background-color: #2A3342;
     color: white;
     align-items: center;
@@ -423,11 +423,15 @@ footer{
     top: 10%;
     right: 0;
     z-index: 1;
-      margin: auto;
-
-    .cierre{
+    margin: auto;
+    border-radius: 10px;
+    
+         
+    #cierre{
         align-self: end;
         margin-right: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
     img{
         width: 50px;
@@ -457,18 +461,48 @@ footer{
         span{
             display: flex;
             font-size: 0.5em;
-            .recuperar-span{
-                color:#2AD167;
+            
+            
+            
+        }
+        .recuperar{
+            display: flex;
+            justify-content: space-between;
+            input{
+                margin-right: 5px;
             }
-
-
-
+        }
+        .recuperar-span{
+            color:#2AD167;
         }
 
         .vertical-fields{
             display: flex;
             flex-direction: column;
         }
-    }
 
+    @media(max-width: 390px){
+        width: 100vw;
+        height: 100vh;
+        img{
+            margin: 50px 0px;
+        }
+        .form-modal{
+            margin-top: 40px;
+        }
 
+    }    
+}
+#paragraph3{
+    font-size: 0.5rem;
+    display: inline;
+} 
+#a-registrate{
+    color:#2AD167;
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+
+#modal-toggle{
+    display: none;
+}

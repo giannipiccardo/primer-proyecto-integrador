@@ -48,7 +48,7 @@
   text-decoration: none;
   color: black;
 }
-.navbar .navbar-login .navbar-item #registrarme {
+.navbar .navbar-login .navbar-item #registrarme2 {
   background-color: #2AD167;
   color: white;
   border-radius: 5px;
@@ -353,7 +353,7 @@ footer .footer-copy span {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  height: 45vh;
+  height: 50vh;
   background-color: #2A3342;
   color: white;
   align-items: center;
@@ -362,10 +362,13 @@ footer .footer-copy span {
   right: 0;
   z-index: 1;
   margin: auto;
+  border-radius: 10px;
 }
-#modal .cierre {
+#modal #cierre {
   align-self: end;
   margin-right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 #modal img {
   width: 50px;
@@ -392,10 +395,44 @@ footer .footer-copy span {
   display: flex;
   font-size: 0.5em;
 }
-#modal span .recuperar-span {
+#modal .recuperar {
+  display: flex;
+  justify-content: space-between;
+}
+#modal .recuperar input {
+  margin-right: 5px;
+}
+#modal .recuperar-span {
   color: #2AD167;
 }
 #modal .vertical-fields {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 390px) {
+  #modal {
+    width: 100vw;
+    height: 100vh;
+  }
+  #modal img {
+    margin: 50px 0px;
+  }
+  #modal .form-modal {
+    margin-top: 40px;
+  }
+}
+
+#paragraph3 {
+  font-size: 0.5rem;
+  display: inline;
+}
+
+#a-registrate {
+  color: #2AD167;
+  text-decoration: none;
+  font-size: 0.5rem;
+}
+
+#modal-toggle {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
